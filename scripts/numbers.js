@@ -49,3 +49,28 @@ console.log(max);
 let min = Number.MIN_VALUE;
 console.log(min);
 
+//Rounding
+console.log("Rounding: " + num + " to " + Math.round(num));
+
+//Random
+console.log("Random number: " + Math.random()); //Generates a number between 0-1
+
+function randomRange(min, max){
+    let value =  Math.random() * (max - min) + min;
+    console.log(value);
+}
+
+randomRange(1,3);
+
+//Parsing ints and floats
+let example = "150px";
+console.log("Parsing Int on " + example + ": " + parseInt(example))
+console.log("Parsing Float on " + example + ": " + parseFloat(example))
+
+
+//Powers
+console.log("Raising " + num + " to a given power: " + Math.pow(num, 2));
+
+
+
+
