@@ -140,5 +140,5 @@ console.log(result);
 console.log(" *** SORT ***");
 array = [1,2,15];
 console.log(array);
-let sortedArray = array.sort();
+let sortedArray = array.sort();         //New order is 1,15,2 because by default sort using String values. The value for "15" is < "2"
 console.log(sortedArray);
