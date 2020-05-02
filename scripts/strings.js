@@ -9,9 +9,9 @@ console.log(`1 + 2 = ${sum(1, 2)}.`);   //  Backticks allow us to embed any expr
 
 
 let guestList = `Guests:                
-- Liam
-- Mika
-- Matthew
+- Harry
+- Hermione
+- Ronald
 `;
 console.log(guestList);                 //  Backticks also allow strings to span multiple lines. 
 
@@ -20,7 +20,7 @@ console.log(guestList);                 //  Backticks also allow strings to span
 /** SPECIAL CHARACTERS */
 
 //Newline
-let guestList2 = "Guests:\n -Liam\n -Mika\n -Matthew";      
+let guestList2 = "Guests:\n -Harry\n -Hermione\n -Ronald";      
 console.log(guestList2);
 
 //Quotes
