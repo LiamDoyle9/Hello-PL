@@ -1,0 +1,23 @@
+body {
+    font-family: "Inconsolata", monosapce;
+    color: #0d1e2d;
+    
+  }
+  
+  a {
+    color: #777;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading {
+    font-family: "Raleway", sans-serif;
+  }
