@@ -57,6 +57,10 @@ body {
     display: inline-block;
   }
 
+  #site-section-description{
+    text-align: justify;
+  }
+
 
 
   
