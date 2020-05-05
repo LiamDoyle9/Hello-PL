@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 
+
 body {
     font-family: "Inconsolata", monosapce;
     color: #0d1e2d;
@@ -22,6 +23,14 @@ body {
   a:hover {
     color: #000;
   }
+
+  #tbf {
+    color: #FFB9B3;
+  }
+
+  #finished {
+    color: #ACECD5;
+  }
   
   h1,
   h2,
@@ -32,9 +41,10 @@ body {
   .font-heading {
     font-family: "Raleway", sans-serif;
   }
-  
+
   .top-section{
     padding:3em 3em 0em 3em;
+    
   }
 
   .top-section p{
@@ -42,7 +52,7 @@ body {
     max-width: 1140px;
     text-align: justify;
   }
-  
+
   hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -234,56 +244,7 @@ body {
     opacity: 0.9;
   }
 
-  .readmore {
-    display: inline-block;
-    border: 1px solid #000;
-    padding: 10px 15px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #000;
-    transition: .2s all ease;
-    font-weight: 700;
-  }
-  
-  .readmore:active,
-  .readmore:focus,
-  .readmore:hover {
-    outline: none;
-  }
-  
-  .readmore:hover {
-    color: #fff;
-    text-decoration: none;
-    background: #000;
-  }
-  
-  .testimonial-carousel .owl-dots {
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-    text-align: justify;
-  }
-  
-  .testimonial-carousel .owl-dots .owl-dot {
-    display: inline-block;
-  }
-  
-  .testimonial-carousel .owl-dots .owl-dot > span {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color: #cbd3da;
-    border-radius: 50%;
-    margin: 5px;
-  }
-  
-  .testimonial-carousel .owl-dots .owl-dot.active {
-    outline: none;
-  }
-  
-  .testimonial-carousel .owl-dots .owl-dot.active > span {
-    background: #0d1e2d;
-  }
+
   
   .sticky-content {
     position: sticky;
@@ -332,54 +293,7 @@ body {
   .custom-progress .progress-bar {
     background: #000;
   }
-  
-  /* Contact Form */
-  
-  .php-email-form .validate {
-    display: none;
-    color: red;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-  }
+
   
   @-webkit-keyframes animate-loading {
     0% {

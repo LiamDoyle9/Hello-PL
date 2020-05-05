@@ -45,6 +45,14 @@ h6,
   text-align: justify;
 }
 
+#clock_container{
+  max-height: 50%;
+  border: solid 1px;
+  border-color:rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: gray;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
