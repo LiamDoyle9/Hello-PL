@@ -48,13 +48,23 @@ h6,
 
 #project_description{
   text-align: justify;
+  padding-bottom: 1em;
 }
 
-#project_pic{
+#adventuregame_pic{
+  max-width: 100%;
+  height: auto;
+}
+
+#androidapp_pic{
   width: 100%;
   height: auto;
 }
 
+#connect4_pic{
+  width: 80%;
+  height: auto;
+}
 
 #nb {
   font-size: 10pt;
