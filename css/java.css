@@ -46,13 +46,20 @@ h6,
   
 }
 
+#project_description{
+  text-align: justify;
+}
+
 #project_pic{
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
 
-
+#nb {
+  font-size: 10pt;
+  font-style: italic;
+}
 .well{
   max-width: 100%;
   display:flex;

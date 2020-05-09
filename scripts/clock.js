@@ -1,3 +1,4 @@
+
 function setup() {
   // put setup code here
   createCanvas(600,600);
@@ -16,12 +17,10 @@ function draw() {
   fill(219,220,255);
   noStroke();
   ellipse (0,0,10,10);
-
   noFill();
 
   let fiveMinuteMarker = (secondDisplay, 0, 12, 0, 360);
   stroke (219,220,255);
-
 
   let endSecond = map (secondDisplay, 0, 60, 0, 360);
   stroke(219,220,255);
@@ -34,7 +33,6 @@ function draw() {
   line(0,0,200,0);
   pop();
 
-
   let endMinute = map (minuteDisplay, 0, 60, 0, 360);
 
   arc(0,0, 460, 460, 0, endMinute);
@@ -43,7 +41,6 @@ function draw() {
   strokeWeight(3);
   line(0,0,200,0);
   pop();
-
 
   let endHour = map (hourDisplay % 12, 0, 12, 0, 360);
 
@@ -55,3 +52,10 @@ function draw() {
   line(0,0,150,0);
   pop();
 }
+
+function display(){
+  setup();
+  draw();
+}
+
+

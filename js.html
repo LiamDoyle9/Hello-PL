@@ -21,12 +21,22 @@
   <!-- Vendor CSS Files -->
   <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/js.css">
 
 
-  <title>Hello, JavaScript!></title>
+  <title>Hello, JavaScript!</title>
 </head>
 
 <body>
@@ -86,95 +96,30 @@
   <div class="site-section1">
     <div class="container">
       <div class="row justify-content-center text-center mb-4">
-        <div class="col-lg-6 col-sm-12 col-md-12">
+        <div class="col-lg-12 col-sm-12 col-md-12">
           <h4>Clocks.JS</h4>
           <hr>
         </div>
       </div>
-    </div>
-    <div class="container" id="clock_container">
-      <script type="text/JavaScript">
-
-        function setup() {
-          // put setup code here
-          createCanvas(600,600);
-        angleMode(DEGREES);
-        }
-
-        function draw() {
-          // put drawing code here
-          background(100);
-          translate(300,300);
-          rotate(-90);
-          let hourDisplay = hour();
-    let minuteDisplay = minute();
-  let secondDisplay = second();
-
-  fill(219,220,255);
-  noStroke();
-  ellipse (0,0,10,10);
-
-  noFill();
-
-  let fiveMinuteMarker = (secondDisplay, 0, 12, 0, 360);
-  stroke (219,220,255);
+      <div class="col-md-12 col-lg-12 col-sm-12 well">
+        <div class="col-md-6 col-lg-6 col-sm-6 justify-content-center text-center">
+          <img id="project_pic" src="images/clock.png">
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6">
+          <p id="project_description">The <i>Clocks.JS</i> project by <a href="https://shiffman.net/">Dan Shiffman</a> is an introductory project to the <a href="https://p5js.org/">P5.JS</a> library that allows you to create interesting web-based visuals and animations. The goal of this project was to explore the P5 documentation and come up with a design for an analogue clock. This project was great for introducing me to JavaScript syntax, data types, and carrying out primitive debugging using the inspector tool in Google Chrome and the console.</p>
+        </div>
+      </div>
 
 
-  let endSecond = map (secondDisplay, 0, 60, 0, 360);
-  stroke(219,220,255);
-  //arc(x, y, width, number of radial sectors to draw)
-  arc(0,0, 480, 480, 0, endSecond);
 
-  push();
-  rotate(endSecond);
-  stroke(219,220,255);
-  line(0,0,200,0);
-  pop();
-
-
-  let endMinute = map (minuteDisplay, 0, 60, 0, 360);
-
-  arc(0,0, 460, 460, 0, endMinute);
-  push();
-  rotate(endMinute);
-  strokeWeight(3);
-  line(0,0,200,0);
-  pop();
-
-
-  let endHour = map (hourDisplay % 12, 0, 12, 0, 360);
-
-  arc(0, 0, 440, 440, 0, endHour);
-
-  push();
-  rotate(endHour);
-  strokeWeight(3);
-  line(0,0,150,0);
-  pop();
-}
-
-        </script>
+      
     </div>
   </div>
 
 
 
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <!-- P5.JS -->
-
-  <script src="libraries/p5.min.js"></script>
-  <script src="addons/p5.dom.min.js"></script>
-  <script src="addons/p5.sound.min.js"></script>
-  <script src="scripts/clock.js"></script>
 
 
 
